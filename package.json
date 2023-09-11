@@ -1,0 +1,20 @@
+{
+  "name": "ui_automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "smoke-local": "npx cypress run --spec cypress/e2e/tabs.js --browser chrome",
+    "regression-local": "npx cypress run",
+    "smoke-dashboard": "npx cypress run --record --key 8160131a-2740-46cd-b865-3482361dee75 --spec cypress/e2e/tabs.js",
+    "regression-dashboard": "npx cypress run --record --key 8160131a-2740-46cd-b865-3482361dee75"
+  },
+  "author": " ",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/xpath": "^2.0.3",
+    "cypress": "^12.6.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "mochawesome": "^7.1.3"
+  }
+}
